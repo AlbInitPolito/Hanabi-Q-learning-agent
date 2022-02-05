@@ -79,6 +79,6 @@ The clients are automatic. These commands could be used on **old_client.py**, in
   - Giovanni Squillero
   - Andrea Calabrese
 - Client and Q-learning:
-  - Alberto Castrignanò
-  - Stefano Rainò
+  - Alberto Castrignanò, s281689
+  - Stefano Rainò, s282436
 
