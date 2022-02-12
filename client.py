@@ -1,16 +1,11 @@
-from importlib.resources import path
 from sys import argv, stdout
-from threading import Thread
 
 import GameData
 import socket
 from constants import *
-import os
 import checks as ck
 import Qprocess as qp
 import game
-import time
-import select
 
 if (len(argv) < 4):
     print("You need the player name to start the game.")
@@ -44,7 +39,7 @@ def manageInput():
 
     Qtable = False
     while not Qtable:
-        Qtable = qp.loadQTableFromFile(path='./tables/Q-table.npy')   # list of size (256,3)
+        Qtable = qp.loadQTableFromFile(path='./Q-table.npy')   # list of size (256,3)
     
     while True:
         data = s.recv(DATASIZE)

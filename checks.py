@@ -449,4 +449,3 @@ def computeHintReward(state,hint,playerHand):
         reward += 5                 # +5 if the hintable card is a 5
     
     return reward
-
